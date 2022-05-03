@@ -1,9 +1,27 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import routes from "./routes";
+
+type PropsWithChildren = {
+  children: JSX.Element;
+};
+
+function ContextProvider({ children }: PropsWithChildren): JSX.Element {
+  /* Here goes the Contexts Providers from Context API */
+  return <div>{children}</div>;
+}
+
 function Talk(): JSX.Element {
   return (
-    <div>
-      Welcome to Talk!
-      <p>Realtime chat with friends and strangers</p>
-    </div>
+    <ContextProvider>
+      <BrowserRouter>
+        <Routes>
+          {routes.map(({ path, component }, index) => (
+            <Route key={index} path={path} element={component} />
+          ))}
+        </Routes>
+      </BrowserRouter>
+    </ContextProvider>
   );
 }
 

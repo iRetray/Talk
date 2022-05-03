@@ -1,0 +1,68 @@
+@import "../theme.scss";
+
+.BoxMessageContainer {
+  margin: 15px;
+  margin-right: 45px !important;
+  .mainContainer {
+    padding: 15px;
+    background-color: $yellowLight;
+    width: 250px;
+    z-index: 3;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      line-height: 19px;
+      margin-bottom: 10px;
+      .date {
+        color: lighten($color: #000000, $amount: 30%);
+      }
+    }
+  }
+
+  .arrow {
+    width: 20px;
+    height: 10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+    left: 17px;
+    z-index: -1;
+    top: -7px;
+  }
+
+  .arrowShadow {
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #f2d22e;
+    font-size: 0px;
+    line-height: 0px;
+    position: relative;
+    top: -16px;
+    left: 14px;
+    z-index: 2;
+  }
+
+  .RIGHT {
+    background-color: lighten($color: $yellowLight, $amount: 30%) !important;
+  }
+
+  .RIGHT_ARROW {
+    left: 246px !important;
+  }
+
+  .RIGHT_SHADOW_ARROW {
+    border-top: 15px solid lighten($color: $yellowLight, $amount: 30%) !important;
+    left: 242px !important;
+  }
+}
+
+.RIGHT_CONTAINER {
+  margin-right: 15px !important;
+  margin-left: 45px !important;
+}
