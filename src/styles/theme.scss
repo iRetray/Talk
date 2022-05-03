@@ -3,3 +3,7 @@ $yellowLight: #f2d22e;
 $yellowHard: #f2b807;
 $orangeLight: #f2a007;
 $orangeHard: #f28907;
+$grey: lighten(
+  $color: #000000,
+  $amount: 30%,
+);

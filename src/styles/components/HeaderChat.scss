@@ -1,0 +1,28 @@
+@import "../theme.scss";
+
+.HeaderChatContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: linear-gradient(0deg, rgb(242, 184, 7) 10%, #f59c20 80%);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px;
+  margin-bottom: 15px;
+  img {
+    max-width: 50px;
+  }
+  .textContainer {
+    margin-left: 10px;
+    .name {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .status {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      color: $grey;
+    }
+  }
+}

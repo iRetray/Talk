@@ -1,16 +1,18 @@
+@import "../theme.scss";
+
 .WelcomeContainer {
-  padding: 5vw;
-  height: 100vh;
+  padding: 5vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  .chatContainer {
-    height: -webkit-fill-available;
-    img {
-      position: absolute;
-      z-index: -10;
-      object-fit: contain;
-    }
+  .subtitle {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    color: $grey;
   }
 }
