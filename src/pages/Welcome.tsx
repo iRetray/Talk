@@ -1,4 +1,4 @@
-import { ContextType, Fragment, useContext } from "react";
+import { Fragment, useContext } from "react";
 
 import {
   BoxMessage,
@@ -16,7 +16,7 @@ import googleIcon from "../images/google.png";
 type ContextConsumer = [ContextStateType, any];
 
 export const Welcome = (): JSX.Element => {
-  const [userState, UserDispatch] = useContext(UserContext) as ContextConsumer;
+  const [, UserDispatch] = useContext(UserContext) as ContextConsumer;
 
   const auth = getAuth();
   const provider = new GoogleAuthProvider();
